@@ -18,7 +18,7 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header>
+    <header class="page-header">
       <div class="container">
         <nav class="main-nav">
           <a href="./index.html" class="logo">
@@ -27,12 +27,14 @@
 
           <ul class="site-nav list">
             <li class="items">
-              <a href="./index.html" class="link current">Студия</a>
+              <a href="./index.html" class="link current border">Студия</a>
             </li>
             <li class="items">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
-            <li class="items"><a href="" class="link">Контакты</a></li>
+            <li class="items">
+              <a href="" class="link">Контакты</a>
+            </li>
           </ul>
 
           <div class="contact">
@@ -123,14 +125,19 @@
         </div>
       </section>
 
-      <section class="section-fon">
+      <section class="section">
         <div class="container">
           <h2 class="section-title two">Чем мы занимаемся</h2>
 
           <ul class="work">
             <li class="work-two">
               <a href="">
-                <img src="./image/business.jpg" alt="Ноутбук" width="370" />
+                <img
+                  src="./image/business.jpg"
+                  alt="Ноутбук"
+                  width="370"
+                  height="294"
+                />
               </a>
               <h3 class="section-lead">Десктопные приложения</h3>
             </li>
@@ -141,6 +148,7 @@
                   src="./image/box.jpg"
                   alt="Мобильный телефон"
                   width="370"
+                  height="294"
                 />
               </a>
               <h3 class="section-lead">Мобильные приложения</h3>
@@ -148,7 +156,12 @@
 
             <li class="work-two">
               <a href="">
-                <img src="./image/Borders.jpg" alt="Монитор" width="370" />
+                <img
+                  src="./image/Borders.jpg"
+                  alt="Монитор"
+                  width="370"
+                  height="294"
+                />
               </a>
               <h3 class="section-lead">Дизайнерские решения</h3>
             </li>
@@ -481,7 +494,13 @@
       <div>
         <p class="copyrigth">2020 | Developed by GoIT Students</p>
       </div>
-      <!-- </div> -->
     </footer>
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector(".page-header")
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
   </body>
 </html>

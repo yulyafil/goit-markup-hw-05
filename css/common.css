@@ -36,7 +36,6 @@ body {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 .visually-hidden {
   position: absolute;
@@ -49,6 +48,14 @@ img {
   overflow: hidden;
 }
 /* Logo */
+.page-header {
+  position: fixed;
+  width: 100%;
+  min-height: 80px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
 
 .logo {
   color: var(--accent-text-color);
@@ -113,6 +120,7 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link.current {
   color: var(--accent-text-color);
@@ -120,6 +128,36 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
+}
+.border {
+  position: relative;
+  cursor: pointer;
+}
+.border::after {
+  position: absolute;
+  content: "";
+  display: block;
+  align-items: center;
+  margin-right: 0;
+  width: 47px;
+  bottom: 0;
+
+  border-bottom: 4px solid var(--accent-text-color);
+  border-radius: 2px;
+}
+.border-two {
+  position: relative;
+  cursor: pointer;
+}
+.border-two::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 77px;
+  bottom: 0;
+
+  border-bottom: 4px solid var(--accent-text-color);
+  border-radius: 2px;
 }
 ul .site-nav,
 .contact {
@@ -148,6 +186,7 @@ ul .site-nav,
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-mail,
@@ -159,6 +198,7 @@ ul .site-nav,
 .contact-mail:hover,
 .contact-phone:hover {
   fill: var(--accent-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Footer */
@@ -227,8 +267,10 @@ ul .site-nav,
   margin-right: 10px;
 }
 
-.inline-link:hover {
+.inline-link:hover,
+.inline-link:focus {
   background-color: var(--accent-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .inline-icon {
   width: 20px;
