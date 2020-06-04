@@ -203,7 +203,6 @@ ul .site-nav,
 
 /* Footer */
 .footer {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #2f303a;
   color: var(--accent-white);
 }
