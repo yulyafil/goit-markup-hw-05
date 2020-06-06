@@ -18,7 +18,7 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header class="page-header">
+    <header>
       <div class="container">
         <nav class="main-nav">
           <a href="./index.html" class="logo">
@@ -495,12 +495,5 @@
         <p class="copyrigth">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
-    <script>
-      const { height: pageHeaderHeight } = document
-        .querySelector(".page-header")
-        .getBoundingClientRect();
-
-      document.body.style.paddingTop = `${pageHeaderHeight}px`;
-    </script>
   </body>
 </html>

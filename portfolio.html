@@ -19,7 +19,7 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header class="page-header">
+    <header>
       <div class="container">
         <nav class="main-nav">
           <a href="./index.html" class="logo">
@@ -28,7 +28,7 @@
 
           <ul class="site-nav list">
             <li class="items">
-              <a href="/index.html" class="link">Студия</a>
+              <a href="./index.html" class="link">Студия</a>
             </li>
             <li class="items">
               <a href="./portfolio.html" class="link current border-two">Портфолио</a>
@@ -330,13 +330,6 @@
       </div>
       </div>
     </footer>
-    <script>
-      const { height: pageHeaderHeight } = document
-        .querySelector(".page-header")
-        .getBoundingClientRect();
-
-      document.body.style.paddingTop = `${pageHeaderHeight}px`;
-    </script>
     </body>
   </html>
 

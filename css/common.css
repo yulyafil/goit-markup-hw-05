@@ -48,14 +48,6 @@ img {
   overflow: hidden;
 }
 /* Logo */
-.page-header {
-  position: fixed;
-  width: 100%;
-  min-height: 80px;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
 
 .logo {
   color: var(--accent-text-color);
